@@ -1,0 +1,14 @@
+.env
+node_modules
+yarn-error.log
+typechain
+coverage/
+coverage.json
+cache
+artifacts
+src/types/
+build
+.openzeppelin
+.DS_Store
+.vscode
+.vscode/launch.json
