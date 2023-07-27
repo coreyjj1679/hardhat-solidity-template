@@ -1,20 +1,14 @@
 import { HardhatUserConfig } from 'hardhat/config'
 import '@hardhat-docgen/core'
 import '@hardhat-docgen/markdown'
-import '@nomiclabs/hardhat-solhint'
-import '@nomiclabs/hardhat-ethers'
-import '@nomiclabs/hardhat-etherscan'
 import '@nomicfoundation/hardhat-ethers'
+import '@nomicfoundation/hardhat-toolbox'
 import '@nomicfoundation/hardhat-chai-matchers'
-import '@nomicfoundation/hardhat-ethers'
 import '@typechain/hardhat'
-import '@typechain/ethers-v6'
-import 'solidity-coverage'
 import 'hardhat-deploy'
 import 'hardhat-gas-reporter'
-import 'hardhat-docgen'
 import 'hardhat-contract-sizer'
-import 'hardhat-gas-reporter'
+import 'solidity-coverage'
 import dotenv from 'dotenv'
 
 dotenv.config()
@@ -53,6 +47,12 @@ const config: HardhatUserConfig = {
         },
       },
     ],
+  },
+  paths: {
+    sources: './contracts',
+    tests: './test',
+    cache: './cache',
+    artifacts: './artifacts',
   },
   contractSizer: {
     alphaSort: false,
