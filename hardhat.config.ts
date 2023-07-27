@@ -1,6 +1,4 @@
 import { HardhatUserConfig } from 'hardhat/config'
-import '@hardhat-docgen/core'
-import '@hardhat-docgen/markdown'
 import '@nomicfoundation/hardhat-ethers'
 import '@nomicfoundation/hardhat-toolbox'
 import '@nomicfoundation/hardhat-chai-matchers'
@@ -93,12 +91,6 @@ const config: HardhatUserConfig = {
       url: 'https://rpc.notadegen.com/sepolia',
       chainId: 11155111,
     },
-  },
-  docgen: {
-    path: './docs',
-    clear: true,
-    runOnCompile: false,
-    except: ['/test/*', '/mock/*'],
   },
 }
 
