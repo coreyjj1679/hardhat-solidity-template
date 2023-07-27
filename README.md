@@ -1,21 +1,29 @@
 # Local Development
 
-The following assumes the use of `node@>=10`.
+The following assumes the use of `node@>=14`.
 
 ## Install Dependencies
 
 `yarn`
 
-## Compile Contracts
+## Update .env
+
+`cp .env.template .env`
+
+## Compile contracts
 
 `yarn compile`
 
 ## Run Tests
 
-`yarn test`
+`yarn test [FILE_PATH]`
+`yarn test-parallel [FILE_PATH]`
+`yarn test-bali [FILE_PATH]`
+
+## Deploy contracts
+
+`npx hardhat deploy --tags <TAGS> --network <NETWORK>`
 
 ## Verify Contract
 
-`npx hardhat verify <CONTRACT_ADDRESS> --network fuji /`
-
-`npx hardhat verify --construct-args ./args.ts <CONTRACT_ADDRESS> --network fuji `
+`npx hardhat --network <NETWORK> etherscan-verify`
