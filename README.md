@@ -1,6 +1,13 @@
-# Local Development
+# Solidity Template
+A lightweight template for developing smart contracts in Solidity.
 
-The following assumes the use of `node@>=14`.
+
+## Major Plugins 
+- `ethers`
+- `hardhat`
+- `@nomicfoundation/hardhat-chai-matchers`
+- `@nomicfoundation/hardhat-toolbox`
+
 
 ## Install Dependencies
 
@@ -14,14 +21,6 @@ The following assumes the use of `node@>=14`.
 
 `yarn compile`
 
-## Run Tests
-
-```bash
-yarn test [FILE_PATH]
-yarn test:parallel [FILE_PATH] # parallel mode
-yarn test:bali [FILE_PATH] # bali mode
-```
-
 ## Deploy contracts
 
 `npx hardhat deploy --tags <TAGS> --network <NETWORK>`
@@ -29,3 +28,10 @@ yarn test:bali [FILE_PATH] # bali mode
 ## Verify Contract
 
 `npx hardhat --network <NETWORK> etherscan-verify`
+## Run tests
+
+```bash
+yarn test [FILE_PATH]
+yarn test:parallel [FILE_PATH] # parallel mode
+yarn test:bali [FILE_PATH] # bali mode
+```
