@@ -75,8 +75,8 @@
     "compile": "hardhat compile",
     "pretest": "yarn compile",
     "test": "hardhat test",
-    "test-parallel": "hardhat test --parallel",
-    "test-bail": "hardhat test --bail --parallel",
+    "test:parallel": "hardhat test --parallel",
+    "test:bail": "hardhat test --bail --parallel",
     "size": "hardhat size-contracts",
     "coverage": "hardhat coverage"
   }

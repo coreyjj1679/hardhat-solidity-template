@@ -16,9 +16,11 @@ The following assumes the use of `node@>=14`.
 
 ## Run Tests
 
-`yarn test [FILE_PATH]`
-`yarn test-parallel [FILE_PATH]`
-`yarn test-bali [FILE_PATH]`
+```bash
+yarn test [FILE_PATH]
+yarn test:parallel [FILE_PATH] # parallel mode
+yarn test:bali [FILE_PATH] # bali mode
+```
 
 ## Deploy contracts
 
