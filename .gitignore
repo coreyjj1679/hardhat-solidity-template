@@ -2,6 +2,7 @@
 node_modules
 yarn-error.log
 typechain
+typechain-types
 coverage/
 coverage.json
 cache
